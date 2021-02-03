@@ -6,7 +6,7 @@
 import csv
 import json
 
-csvFilePath = r'lotp-final.csv'  # your input .csv file
+csvFilePath = r'lotp-card-text-final.csv'  # your input .csv file
 jsonFilePath = r'lotp-final-gj.json'  # name of output .json file to upload to rpg-cards
 
 jsonArray = [] # array storing data from each .csv row to be converted to separate .json 
@@ -27,7 +27,7 @@ with open(csvFilePath, encoding='utf-8') as csvFile: # open and read the input .
 			elif rows["effect_type"] == "linger":
 				temp["contents"] = ["text | ", "section | <b>Scenario (Lingering)</b>", "text | " + rows["effect"], "rule", "text | ", " italic | " + rows["quote"], "text | ",  "italicbold | " + " - " + rows["source"], "text | "] 
 		# if no "effect" column, generate Guest card dictionary instead 
-        else:
+		else:
 			temp["contents"] = ["text | ", "section | <b>Guest</b>","text | ", "text | ", "italic | " + rows["quote"], "text | ", " italicbold | " + " - " + rows["source"], "text | "]
 		
 		print(temp) # optional, but prints data to be committed
