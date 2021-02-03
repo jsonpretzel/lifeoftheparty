@@ -1,7 +1,7 @@
 # lifeoftheparty
 Life of the Party
 
-This script takes a .csv file and converts it into a .json file that can be read into rpg-cards ((https://github.com/crobi/rpg-cards) to generate formatted playing cards.  
+This script takes a .csv file and converts it into a .json file that can be read into rpg-cards (https://github.com/crobi/rpg-cards) to generate formatted playing cards.  
 
 The default settings generate card .json data for the game Life Of The Party (https://jsonpretzel.itch.io/life-of-the-party). The .csv file used for the first release of LOTP is included for reference.
 
